@@ -1,13 +1,13 @@
-#Appointment Scheduler
+# Appointment Scheduler
 
 Simple API to schedule users appointments
 
 
-##Content
+## Content
 1. [Requirements](#Requirements)
 2. [Installation](#Installation)
-   1. [Using Linux](#Using Linux or WSL in MS Windows) 
-   2. [Using Docker](#Using Docker)
+   1. [Linux](#Linux) 
+   2. [Docker](#Docker)
 3. [Usage](#Usage)
 4. [API Doc](#API)
 
@@ -19,9 +19,9 @@ Python virtualenv (Optional)
 Docker (Only for docker installation)
 ***
 
-###Installation
+### Installation
 
-####Using Linux or WSL in MS Windows
+#### Using Linux or WSL in MS Windows
 Clone the repository
 ```
 git clone https://github.com/ferjflores/scheduler_api.git
@@ -43,7 +43,7 @@ python run.py
 After that the API should be running on http://localhost:5000
 
 
-####Using Docker
+#### Using Docker
 ```
 docker pull ferjflores/scheduler_api
 ```
@@ -55,9 +55,9 @@ After that the API should be running on http://localhost:5000
 
 ***
 
-###Usage
+### Usage
 
-####Create and appointment
+#### Create and appointment
 curl --request POST \
   --url http://localhost:5000/api/appointment/ \
   --header 'Content-Type: application/json' \
@@ -66,13 +66,13 @@ curl --request POST \
 	"requested_date": "20211116083000"
 }'
 
-####Get all appointments for the user
+#### Get all appointments for the user
 curl --request GET \
   --url http://localhost:5000/api/user/test_user_id
 
 ***
 
-###API 
+### API 
 
 **Add Appointment**
 ```
