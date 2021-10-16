@@ -6,8 +6,8 @@ Simple API to schedule users appointments
 ## Content
 1. [Requirements](#Requirements)
 2. [Installation](#Installation)
-   1. [Linux](#Linux) 
-   2. [Docker](#Docker)
+   1. [Using Linux](#Linux) 
+   2. [Using Docker](#Docker)
 3. [Usage](#Usage)
 4. [API Doc](#API)
 
@@ -21,7 +21,9 @@ Docker (Only for docker installation)
 
 ### Installation
 
-#### Using Linux or WSL in MS Windows
+#### Linux 
+**or WSL in MS Windows**
+
 Clone the repository
 ```
 git clone https://github.com/ferjflores/scheduler_api.git
@@ -43,7 +45,7 @@ python run.py
 After that the API should be running on http://localhost:5000
 
 
-#### Using Docker
+#### Docker
 ```
 docker pull ferjflores/scheduler_api
 ```
